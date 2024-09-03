@@ -1,0 +1,24 @@
+.item-btn{
+    cursor: pointer;
+    background-color: white;
+    border: 3px solid rgb(34, 34, 81);
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(34, 34, 81);
+    font-weight: 700;
+    margin: 20px;
+}
+.item{
+     display: flex;
+     justify-content: space-around;
+}
+.item-content{
+    width: 50%;
+}
+.item-img{
+    width: 600px;
+    height: 100%;
+}
+.item-img-cont{
+    margin: 50px;
+}

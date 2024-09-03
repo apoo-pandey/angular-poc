@@ -1,0 +1,27 @@
+<div *ngIf="cartList.length==0">
+    <img class="cart-empty-content" src="https://giftmaniashop.com/assets/images/empty_cart.jpg">
+</div>
+
+<div *ngIf="cartList.length!=0" class="cart-title">
+    <h2>Total- ₹ {{total}}</h2>
+    <button class="clear-cart-btn" type="button" (click)="onClearCart()">Clear Cart</button>
+</div>
+
+<ul>
+    <li *ngFor="let item of cartList; let i=index">
+        <div class="cart-content">
+            <div>{{item.name}} - ₹ {{item.amount}}</div>
+            <div class="cart-btn">
+                <!-- <button type="button" (click)="onRemoveItem(i)">Remove</button> -->
+                <div>
+                    <button type="button" (click)="onDecreaseItem(i)"> - </button>
+                </div>
+                <div style="padding: 10px"> {{item.quantity}} </div>
+                <div>
+                    <button type="button" (click)="onIncreaseItem(i)" style="background-color: rgb(134, 217, 134);"> + </button>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </li>
+</ul>

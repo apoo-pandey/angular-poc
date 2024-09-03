@@ -1,0 +1,104 @@
+
+<div class="contact-us">
+
+<h1>Contact Us-</h1>
+
+<p>
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus tellus vitae felis convallis, non condimentum
+        mauris vehicula. Nunc sit amet ante sed magna sollicitudin condimentum. Vivamus ut lectus ac arcu sodales sagittis.
+        Donec id est eget lacus bibendum consequat. Phasellus a ligula non justo iaculis consectetur. Duis eu massa id ipsum
+        eleifend dignissim. Sed ut purus eget libero consectetur dignissim. Morbi feugiat urna sed nisi condimentum, nec
+        faucibus lacus fermentum. Quisque venenatis purus vitae risus gravida scelerisque. In hac habitasse platea dictumst.
+        Nulla vitae vestibulum purus. Cras a efficitur orci. Suspendisse potenti. Donec nec velit quis nibh hendrerit
+        varius.
+        Vivamus sit amet odio eget felis fringilla consequat.
+</p>
+
+<br>
+
+<p>
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus tellus vitae felis convallis, non condimentum
+        mauris vehicula. Nunc sit amet ante sed magna sollicitudin condimentum. Vivamus ut lectus ac arcu sodales sagittis.
+        Donec id est eget lacus bibendum consequat. Phasellus a ligula non justo iaculis consectetur. Duis eu massa id ipsum
+        eleifend dignissim. Sed ut purus eget libero consectetur dignissim. Morbi feugiat urna sed nisi condimentum, nec
+        faucibus lacus fermentum. Quisque venenatis purus vitae risus gravida scelerisque. In hac habitasse platea dictumst.
+        Nulla vitae vestibulum purus. Cras a efficitur orci. Suspendisse potenti. Donec nec velit quis nibh hendrerit
+        varius.
+        Vivamus sit amet odio eget felis fringilla consequat.
+</p>
+<br>
+
+<div class="contact-us-form">
+        <!-- <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+                <div ngModelGroup="userData" #userData="ngModelGroup">
+                        <label for="name">Name:</label>
+                        <input class="form-input" type="text" name="name" ngModel required><br>
+                        <label for="email">Email:</label>
+                        <input class="form-input" type="email" name="email" ngModel #email="ngModel"
+                                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"><br> -->
+                        <!-- <p *ngIf="!email.valid">Please input correct email</p>
+                </div>
+                <button type="button" (click)="suggestUserName()">Suggest User Name</button>
+                <p *ngIf="!userData.valid && userData.touched">User data is invalid</p>
+                <label for="subject">Subject:</label>
+                <input class="form-input" type="text" name="subject" ngModel><br>
+                <label for="message">Message:</label>
+                <input class="form-input" type="text" name="message" ngModel><br>
+                <select name="secret" [ngModel]="defaultChoice">
+                        <option value="Anna">You have chosen Anna</option>
+                        <option value="Elsa">You have chosen Elsa</option>
+                </select><br><br>
+                <textarea name="Q&A" [(ngModel)]="answer" rols="10" cols="10"></textarea>
+                <p *ngIf="answer">Your answer is: {{answer}}</p>
+                <div *ngFor="let gender of genders">
+                        <label for="gender"> {{gender}}
+                                <input type="radio" name="gender" ngModel [value]="gender">
+                        </label>
+                </div>
+                <label for="list">Browsers:</label>
+                <input list="browsers" name="browser">
+                <datalist id="browsers">
+                        <option value="Mozilla">
+                        <option value="safari">
+                        <option value="chrome">
+                        <option value="Edge">
+                </datalist> -->
+                <!-- <button class="form-btn" type="submit" [disabled]="!f.valid">Submit</button>
+        </form>
+        <div #snackbar id="snackbar">
+                Form submitted successfully!
+        </div> -->
+
+        <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" formControlName='username' id="name">
+                        <span *ngIf="!signUpForm.get('username').valid && signUpForm.get('username').touched">Please Enter a Valid UserName</span>
+                </div><br/>
+                <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" class="form-control" formControlName='email' id="name">
+                        <span *ngIf="!signUpForm.get('email').valid && signUpForm.get('email').touched">Please Enter a Valid Email Address</span>
+                </div><br/>
+                <div class="form-group" *ngFor="let gender of genders">
+                        <label for="gender"></label>
+                        <input type="radio" class="form-control" formControlName="gender" [value]="gender"> {{gender}}
+                </div><br/>
+                <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" class="form-control" formControlName="subject" id="subject">
+                </div><br/>
+                <div>
+                        <span *ngIf="!signUpForm.valid && signUpForm.touched">Please Enter Data</span>
+                        <button type="submit">Submit</button>
+                </div>
+        </form>
+</div>
+<hr>`
+<!-- <div *ngIf="true">
+        <h1>Your Data:</h1>
+</div> -->
+</div>
+

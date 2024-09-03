@@ -1,0 +1,21 @@
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    font-size:larger;
+    background-color: rgb(34, 34, 81);
+    overflow: hidden;
+    padding: 10px;
+}
+.nav-header-content{
+    text-decoration: none;
+    color: rgb(220, 211, 211);
+}
+.active{
+    border: 2px solid rgb(220, 211, 211);
+    padding: 3px;
+}
+/* .navbar-right-content{
+    display: flex;
+    justify-content: space-around;
+} */

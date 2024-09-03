@@ -1,0 +1,14 @@
+<!-- <h1> Home</h1>
+<app-about></app-about>
+<app-shop></app-shop>
+<app-contact-us></app-contact-us>
+<app-cart></app-cart> -->
+
+<div class="nav-header">
+    <div style="font-size: xx-large;"><a style="text-decoration: none; color: rgb(220, 211, 211);" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="" >HomeBrand</a></div>
+        <a class="nav-header-content" routerLinkActive="active" routerLink="/about">About</a>
+        <a class="nav-header-content" routerLinkActive="active" routerLink="/shop">Shop</a>
+        <a class="nav-header-content" routerLinkActive="active" routerLink="/cart">Cart<sup
+                *ngIf="cartLength!=0">{{cartLength}}</sup></a>
+        <a class="nav-header-content" routerLinkActive="active" routerLink="/contact-us">Contact Us</a>
+</div>

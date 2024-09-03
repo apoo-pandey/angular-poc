@@ -1,0 +1,24 @@
+.list-item{
+    list-style: none;
+    padding: 20px;
+}
+.shop-to-cart-btn{
+    cursor: pointer;
+    background-color: white;
+    border: 3px solid rgb(34, 34, 81);
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(34, 34, 81);
+    font-weight: 700;
+}
+.shop-content{
+    display: flex;
+    justify-content: space-between;
+}
+.shop-content a{
+    text-decoration: none;
+    font-size:larger;
+    color: black;
+    font-weight:600;
+    cursor: pointer;
+}

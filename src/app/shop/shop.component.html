@@ -1,0 +1,17 @@
+
+<ul>
+    <li class="list-item" *ngFor="let item of shopItemList;let i=index">
+        <div class="shop-content">
+            <div>
+                <a [routerLink]="['/shop', 10,'Elsa']" [queryParams]="{allowed: 'true', page: i}"
+                    fragment="loading">{{item.name}}</a>
+                <span style="font-weight: 600;">- ₹ {{item.amount}}</span><br>
+                {{item.description}}
+            </div>
+            <div>
+                <button class="shop-to-cart-btn" type="button" (click)="onAddToCart(i)">Add to Cart</button>
+            </div>
+        </div>
+        <hr>
+    </li>
+</ul>

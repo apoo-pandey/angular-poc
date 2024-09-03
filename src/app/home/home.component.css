@@ -1,0 +1,76 @@
+/* .home-btn{
+    padding: 20px;
+    margin: 20px;
+    background-color: palevioletred;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.home-btn:hover{
+    background-color: white;
+    transform: scale(1.2);
+    transition: 500ms;
+    font-size: medium;
+}
+.home-content{
+    font-size: large;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/011/144/056/original/elegant-seamless-pattern-background-wallpaper-design-decoration-concept-vector.jpg');
+    overflow: hidden;
+}
+.home-img{
+    display: flex;
+}
+.home-content p{
+    width: 50%;
+} */
+
+.home{
+    background-image: url('https://img.freepik.com/premium-photo/toy-shopping-cart-with-boxes-credit-card-with-copy-space_339191-197.jpg');
+    display: flex;
+    background-size: cover;
+    justify-content: space-around;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.home-content{
+    align-items: flex-start;
+    float: left;
+    margin-left: 150px;
+    margin-top: 200px;
+    font-size: larger;
+    text-align: justify;
+}
+.home-content p{
+    width: 50%;
+}
+/* .home-img{
+    float: right;
+    margin-right: 150px;
+    width: max-content;
+    height: 425px;
+    margin-top: 200px;
+    margin-left: 50px;
+    font-size: larger;
+    border-radius: 10px;
+} */
+.home-btn{
+    padding: 20px;
+    margin: 20px;
+    margin-left: 0;
+    border: 5px solid rgb(235, 221, 93);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(34, 34, 81);
+    color: rgb(220, 211, 211);
+}
+.home-btn:hover{
+    background-color: rgb(220, 211, 211);
+    border: 5px solid rgb(34, 34, 81);
+    color: rgb(34, 34, 81);;
+    transform: scale(1);
+    transition: 500ms;
+    font-size: medium;
+}

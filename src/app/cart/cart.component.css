@@ -1,0 +1,27 @@
+.cart-content{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-title button{
+    cursor: pointer;
+    background-color: lightcoral;
+    padding: 5px;
+    border-radius: 5px;
+}
+.cart-content button{
+    background-color: lightcoral;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.cart-empty-content{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+    overflow: hidden;
+}
+.cart-btn{
+    background-color: white;
+    display: flex;
+}

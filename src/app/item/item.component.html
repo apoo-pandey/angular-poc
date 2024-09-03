@@ -1,0 +1,30 @@
+
+<h2>Product Detail View:</h2>
+<!-- <h4>User ID is {{user.id}}</h4>
+<p>User name is {{user.name}}</p>
+
+<a [routerLink]="['/shop', 10,'Elsa']">Load to this data</a> -->
+
+
+<div class="item">
+    <div class="item-img-cont">
+        <img class="item-img" [src]="pickedItem.image" alt="headphone">
+    </div>
+    <div class="item-content">
+        <h1>{{pickedItem.name}}</h1><hr>
+        <div>
+            <h3 style="font-size:x-large;"> ₹ {{pickedItem.amount}}</h3>
+            <p>
+                Inclusive of all taxes.
+            </p>
+        </div><hr>
+        <p>{{pickedItem.description}}</p>
+        <div>
+            <b>Product Detail:</b>
+            <ul *ngFor="let detail of pickedItem.detail, let i=index">
+                <li>{{detail}}</li>
+            </ul>
+        </div>
+        <button class="item-btn" type="button" (click)="onAddToCart()">Add To Cart</button>
+    </div>
+</div>
